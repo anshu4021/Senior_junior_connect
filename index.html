@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior-Junior Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Senior-Junior Connect</h1>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#mentors">Mentors</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Connect. Learn. Grow.</h1>
+            <p>Find the perfect mentor to guide you through your academic journey</p>
+            <button class="cta-btn">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="./img.png" alt="Anshu">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About Us</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="./img6.png" alt="Mentorship">
+            </div>
+            <div class="about-text">
+                <h3>Bridging the gap between senior and junior students</h3>
+                <p>Senior-Junior Connect is a platform dedicated to facilitating learning, mentorship, and personal growth. We believe that knowledge sharing between experienced seniors and eager juniors creates a powerful ecosystem for academic and professional development.</p>
+                <p>Our mission is to create meaningful connections that benefit both parties: juniors gain valuable insights and guidance, while seniors develop leadership and communication skills.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h4>Community</h4>
+                        <p>Join a thriving community of learners and mentors</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Knowledge</h4>
+                        <p>Access practical insights beyond textbooks</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Growth</h4>
+                        <p>Accelerate your learning and development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentor Search Section -->
+    <section id="mentors" class="mentors">
+        <div class="section-header">
+            <h2>Find Your Mentor</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="mentor-search" placeholder="Search by name, skill, or field...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filters">
+                <select id="field-filter">
+                    <option value="">All Fields</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="business">Business</option>
+                    <option value="arts">Arts & Humanities</option>
+                    <option value="science">Science</option>
+                </select>
+                <select id="experience-filter">
+                    <option value="">All Experience Levels</option>
+                    <option value="1-2">1-2 Years</option>
+                    <option value="3-5">3-5 Years</option>
+                    <option value="5+">5+ Years</option>
+                </select>
+            </div>
+        </div>
+        <div class="mentors-grid" id="mentors-container">
+            <!-- Mentor cards will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <h2>Success Stories</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial-container" id="testimonial-container">
+                <!-- Testimonials will be dynamically added here -->
+            </div>
+            <div class="slider-controls">
+                <button id="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Have questions or suggestions? We'd love to hear from you!</p>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>seniorjuniorconnect.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 6204650570</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>knowlwdge park 3 , Greater Noida</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="form-message" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Senior-Junior Connect</h2>
+                <p>Connect. Learn. Grow.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#mentors">Mentors</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Mentorship Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Senior-Junior Connect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <div class="modal-footer">
+                <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Register</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password">Confirm Password</label>
+                    <input type="password" id="register-confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <label>I am a:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="junior" name="user-type" value="junior" checked>
+                        <label for="junior">Junior Student</label>
+                        <input type="radio" id="senior" name="user-type" value="senior">
+                        <label for="senior">Senior Student</label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+            <div class="modal-footer">
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
